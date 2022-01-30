@@ -1,0 +1,146 @@
+import time
+
+start = str(input('Welcome to the quiz! Type "Begin" to proceed. ').lower().title())
+points = 0
+
+if start == "Begin":
+    print("")
+    print("Loading...")
+    print("")
+    time.sleep(0.5)
+    print("[L.O.A.D.I.N.G]")
+    time.sleep(0.3)
+    print("[██O.A.D.I.N.G]")
+    time.sleep(0.4)
+    print("[███.A.D.I.N.G]")
+    time.sleep(0.3)
+    print("[█████.D.I.N.G]")
+    time.sleep(0.4)
+    print("[████████I.N.G]")
+    time.sleep(0.8)
+    print("[██████████N.G]")
+    time.sleep(0.3)
+    print("[█████████████]")
+    time.sleep(0.6)
+    print("")
+    print("Quiz loaded successfully!")
+    print("")
+    time.sleep(0.8)
+
+    print("Historically, what type of sword would a Royal Navy officer possess?")
+    question_1 = str(input("A) Sabre | B) Cutlass | C) Rapier ").lower().title()) #Correct answer: Cutlass / B
+    if question_1 == "Cutlass" or question_1 == "B":
+        time.sleep(0.1)
+        print("")
+        points += 1
+        print("Correct! Current score: " + str(points) + "/1 point(s)")
+        print("")
+    else:
+        time.sleep(0.1)
+        print("")
+        print("Incorrect! Current score: " + str(points) + "/1 point(s)")
+        print("")
+
+    time.sleep(0.5)
+
+    print("What city is the Eiffel Tower located in?")
+    question_2 = input("A) Paris | B) New York | C) Moscow ").lower().title() #Correct answer: Paris / A
+    if question_2 == "Paris" or question_2 == "A":
+        time.sleep(0.1)
+        print("")
+        points += 1
+        print("Correct! Current score: " + str(points) + "/2 point(s)")
+        print("")
+    else:
+        print("")
+        print("Incorrect! Current score: " + str(points) + "/2 point(s)")
+        print("")
+
+    time.sleep(0.5)
+
+    print("In what year did Francis Drake die?")
+    question_3 = input("A) 1596 | B) 1992 | C) 1431 ").lower().title() #Correct answer: 1596 / A
+    if question_3 == "1596" or question_3 == "A":
+        time.sleep(0.1)
+        points += 1
+        print("")
+        print("Correct! Current score: " + str(points) + "/3 point(s)")
+        print("")
+    else:
+        print("")
+        print("Incorrect! Current score: " + str(points) + "/3 point(s)")
+        print("")
+
+    time.sleep(0.5)
+
+    print("How many minutes does it take for the International Space Station to orbit the Earth?")
+    question_4 = input("A) 150 minutes | B) 120 minutes | C) 90 minutes ").lower().title() #Correct answer: 90 minutes / C
+    if question_4 == "90 minutes" or question_4 == "C" or question_4 == "90":
+        time.sleep(0.1)
+        points += 1
+        print("")
+        print("Correct! Current score: " + str(points) + "/4 point(s)")
+        print("")
+    else:
+        print("")
+        print("Incorrect! Current score: " + str(points) + "/4 point(s)")
+        print("")
+
+    time.sleep(0.5)
+
+    print("Neufchatel cheese comes from what country?")
+    question_5 = input("A) Germany | B) France | C) Netherlands ").lower().title() #Correct answer: France / B
+    if question_5 == "France" or question_5 == "B":
+        time.sleep(0.1)
+        points += 1
+        print("")
+        print("Correct! Current score: " + str(points) + "/5 point(s)")
+        print("")
+    else:
+        print("")
+        print("Incorrect! Current score: " + str(points) + "/5 point(s)")
+        print("")
+
+    time.sleep(0.5)
+
+    print("Which of these birds is NOT named after the call it makes?")
+    question_6 = input("A) Peewit | B) Cuckoo | C) Kingfisher ").lower().title() #Correct answer: Kingfisher / C
+    if question_6 == "Kingfisher" or question_6 == "C":
+        time.sleep(0.1)
+        points += 1
+        print("")
+        print("Correct! Current score: " + str(points) + "/6 point(s)")
+        print("")
+    else:
+        print("")
+        print("Incorrect! Current score: " + str(points) + "/6 point(s)")
+        print("")
+
+    time.sleep(0.5)
+
+    print("What is the cartoon character Andy Capp known as in Germany?")
+    question_7 = input("A) Dick Tingeler | B) Helmut Schmacker | C) Willi Wakker ").lower().title() #Correct answer: Willi Wakker / C
+    if question_7 == "Willi Wakker" or question_7 == "C":
+        time.sleep(0.1)
+        points += 1
+        print("")
+        print("Correct! Current score: " + str(points) + "/7 point(s)")
+        print("")
+    else:
+        print("")
+        print("Incorrect! Current score: " + str(points) + "/7 point(s)")
+        print("")
+
+    time.sleep(0.5)
+
+    print("Your final score is: " + str(points) + " points")
+    print("")
+    time.sleep(0.4)
+    if points >= 0 and points <= 2:
+        print("You have an IQ of 2!")
+    elif points >= 3 and points <= 5:
+        print("You have an IQ of 90!")
+    elif points >= 6 and points <= 7:
+        print("You have an IQ of 200!")
+
+else: print("Invalid response, please try again.")
